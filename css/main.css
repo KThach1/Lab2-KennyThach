@@ -147,6 +147,8 @@ footer p, footer small {
 
 
 /* Testing CSS for when it's a phone in portrait */
+/* Why does it keep changing every time I go back and view it???? */
+/* I'll change the margins and font to make it fit within the phone on dev mode and then save and then it magically changes back and goes past the screen edges again? Wtf? */
 @media (max-width:450px) {
 	header p {
 		margin-left: 0;
