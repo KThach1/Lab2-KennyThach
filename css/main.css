@@ -18,42 +18,39 @@ html {
 	/* STEP 10c: set the background image size to cover the viewport */
 	background-size: cover;
 }
+h1, h1 em, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
 /* STEP 5: Set font sizes according to a typographic scale (h1-h6 and p) */
 h1 {
 	font-size: 4.8rem;
 	/* STEP 7a: Set primary heading font - use "Alfa Slab One" from Google Fonts - place the appropriate @import at the top of this CSS file, then set the font-family to the same, with a fallback to "Rockwell" - then set font-weight to normal (we don't need to bold these fonts) */
-	font-family: "Montserrat", sans-serif;
 	font-weight: normal;
 	/* ...try editing the CSS in the browser dev tools to see the fallback if the Google Font fails to load */
 }
 h1 em {
 	/* STEP 7e: The numero character/symbol is not heavy enough for the surrounding text, so we will set it with a heavy font, and eliminate the italics */
-	font-family: "Montserrat", sans-serif;
 }
 h2 {
 	font-size: 3.6rem;
 	/* STEP 7b: Set subheading font to 'Century Gothic', with a fallback to Futura for Mac, then lastly to sans-serif */
-	font-family: "Montserrat", sans-serif;
 	font-weight: normal;
 }
 h3 {
 	font-size: 2.4rem;
 	/* STEP 7c: Set tertiary heading font to the same as above, then transform all h3 elements to UPPERCASE, with no bottom margin */
-	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 h4 {
 	font-size: 2.1rem;
-	font-family: "Montserrat", sans-serif;
 }
 h5 {
 	font-size: 1.8rem;
-	font-family: "Montserrat", sans-serif;
 }
 h6 {
 	font-size: 1.6rem;
-	font-family: "Montserrat", sans-serif;
 }
 p {
 	font-size: 1.4rem;
@@ -62,35 +59,44 @@ p {
 }
 /* STEP 7d: Set font for p in header to the same as the h2 and the h3 elements, using a descendant (contextual) selector */
 header p {
-	font-family: "Roboto", sans-serif;	
+	font-family: "Roboto", sans-serif;
+	margin-left: 3rem;
 }
 /* STEP 9a: Reduce space between headings in page-level header H1 */
 header h1 {
 	margin: 0;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 /* STEP 8: Bump down subhead font size at top of article */
 header h2 {
 	font-size: 2.4rem;
 	/* STEP 9b: Reduce space between headings in page-level header H2 */
 	margin-top: 0;
+	margin-left: 3rem;
 }
 /* STEP 9c: Move h3 and p closer together in article sections */
 section h3 {
 	margin-bottom: 0.5rem;
+	margin-top: 3rem;
+	margin-left: 3.5rem;
 	/* STEP 13: Visual hierarchy needs improvement - reduce font size */
 	font-size: 1.8rem;
 }
 section p {
-	margin-top: 0;
+	/* margin-top: 0; */
+	margin: auto;
 	/* Changing the measure (using math from the smashingmagazine link 1.6rem is 25px so 25x30 is 750 
 	which is what I'll set the max width) */
-	max-width: 750px;
+	/* max-width: 750px; */
+	max-width: 47rem; /* trying rem instead */
 	/* STEP 12a: Measure is 85+ - too long - bump up the font size */
 	font-size: 1.6rem;
 	/* STEP 12b: Play with the leading (line-height) - raise to 1.8, then reduce to 1.2 - discuss typographic color and vertical rhythm */
 	line-height: 1.6;
 	/* STEP 14a: Justification with text-align - left, right, center, justify */
 	text-align: left;
+	text-indent: 3.75rem;
 	/* STEP 14b: Hyphenation - see Firefox implementation and change BODY width to 50% down below, then resize the window width in your browser to see the effect */
 	hyphens: auto;
 	/* STEP 16a: Play with some non-standard CSS properties like text-rendering - this can enable things like ligatures - look at the combination of letters f and i */
@@ -129,8 +135,10 @@ footer {
 }
 footer h3 {
 	font-size: 1.4em;
+	margin-left: 3rem;
 }
 footer p, footer small {
 	font-family: "Century Gothic", Futura, sans-serif;
+	margin-left: 3rem;
 }
 
